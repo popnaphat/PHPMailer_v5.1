@@ -1,4 +1,6 @@
 <?PHP
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 require("class.phpmailer.php");  // ประกาศใช้ class phpmailer กรุณาตรวจสอบ ว่าประกาศถูก path
 
 function smtpmail( $email , $subject , $body )
@@ -20,7 +22,7 @@ function smtpmail( $email , $subject , $body )
      $result = $mail->send();        
      return $result;
 }
-if(smtpmail("dgop4.gad@gmail.com","ทดลองส่งsmtpไปgmail","ใช่ทดลองนิ"))
+if(smtpmail("dgop4.gad@gmail.com","ppp","llll"))
 {
     echo "email send successful";
 }
