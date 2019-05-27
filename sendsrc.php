@@ -20,4 +20,11 @@ function smtpmail( $email , $subject , $body )
      $result = $mail->send();        
      return $result;
 }
+if(smtpmail("dgop4.gad@gmail.com","ทดลองส่งsmtpไปgmail","ใช่ทดลองนิ"))
+{
+    echo "email send successful";
+}
+else
+{ 
+    echo "false"; }
 ?>
